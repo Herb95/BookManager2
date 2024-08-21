@@ -39,7 +39,7 @@ public class BookTypeServiceImpl implements BookTypeService {
     public Integer deleteBookType(BookType bookType) {
         int count = 0;
         try{
-            count = bookTypeMapper.deleteByPrimaryKey(bookType.getBooktypeid());
+            count = bookTypeMapper.deleteByPrimaryKey(bookType.getBooktypeId());
         } catch (Exception e) {
             e.printStackTrace();
         }

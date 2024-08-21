@@ -11,7 +11,7 @@
  Target Server Version : 50735
  File Encoding         : 65001
 
- Date: 21/11/2021 19:28:39
+ Date: 2024年8月21日20:22:43
 */
 
 SET NAMES utf8mb4;
@@ -149,9 +149,9 @@ CREATE TABLE `user`  (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES (1, 'admin', 'admin', 1);
-INSERT INTO `user` VALUES (2, '李明', '123456', 0);
-INSERT INTO `user` VALUES (11, 'zhang', '123', 0);
-INSERT INTO `user` VALUES (13, 'zhao', 'abc', 1);
+INSERT INTO `user` VALUES (2, 'test0001', 'test0001', 0);
+INSERT INTO `user` VALUES (11, 'test0003', 'test0003', 0);
+INSERT INTO `user` VALUES (13, 'test0002', 'test0002', 1);
 INSERT INTO `user` VALUES (14, 'graywolfz', '123456', 0);
 
 SET FOREIGN_KEY_CHECKS = 1;

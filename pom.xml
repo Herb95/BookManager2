@@ -82,7 +82,6 @@
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
-<!--                <version>1.4.2</version>-->
                 <configuration>
                     <!--配置文件的位置-->
                     <configurationFile>GeneratorMapper.xml</configurationFile>

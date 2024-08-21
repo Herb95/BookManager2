@@ -92,8 +92,8 @@ public class BorrowController {
             // 添加一条记录到borrow表
             Borrow borrow = new Borrow();
             borrow.setUserid(userid);
-            borrow.setBookid(bookid);
-            borrow.setBorrowtime(new Date(System.currentTimeMillis()));
+            borrow.setBookId(bookid);
+            borrow.setBorrowTime(new Date(System.currentTimeMillis()));
             Integer res1 = borrowService.addBorrow2(borrow);
             if(res1 == 0) throw new OperationFailureException("图书" + bookid + "添加借阅记录失败");
 
@@ -120,7 +120,7 @@ public class BorrowController {
                 throw new NullPointerException("图书" + bookid + "不存在");
             } else if(theBorrow == null) {   //结束记录不存在
                 throw new NullPointerException("借书记录" + bookid + "不存在");
-            } else if(theBorrow.getReturntime() != null) {  // 已经还过书
+            } else if(theBorrow.getReturnTime() != null) {  // 已经还过书
                 throw new NotEnoughException("图书" + bookid + "已经还过了");
             }
 
@@ -133,8 +133,8 @@ public class BorrowController {
 
             // 更新Borrow表，更新结束时间
             Borrow borrow = new Borrow();
-            borrow.setBorrowid(borrowid);
-            borrow.setReturntime(new Date(System.currentTimeMillis()));
+            borrow.setBorrowId(borrowid);
+            borrow.setReturnTime(new Date(System.currentTimeMillis()));
             Integer res1 = borrowService.updateBorrow2(borrow);
             if(res1 == 0) throw new OperationFailureException("图书" + bookid + "更新借阅记录失败");
 

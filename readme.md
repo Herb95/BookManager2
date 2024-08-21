@@ -1,6 +1,9 @@
 # 图书管理系统接口程序（Book Management System, Created by SpringBoot framework）
 
-[![我的博客](https://img.shields.io/badge/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-huanfenz.top-brightgreen)](http://huanfenz.top)	[![演示地址](https://img.shields.io/badge/%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-blue)](https://github.com/huanfenz/BookManager2#演示地址)	[![联系方式](https://img.shields.io/badge/%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-green)](https://github.com/huanfenz/BookManager2#联系方式)
+[//]: # ([![我的博客]&#40;https://img.shields.io/badge/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-Herb95.top-brightgreen&#41;]&#40;http://Herb95.top&#41;	)
+
+[//]: # ([![演示地址]&#40;https://img.shields.io/badge/%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-blue&#41;]&#40;https://github.com/Herb95/BookManager2#演示地址&#41;	)
+[![联系方式](https://img.shields.io/badge/%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-green)](https://github.com/Herb95/BookManager2#联系方式)
 
 ## 项目介绍
 
@@ -12,7 +15,7 @@
 
 项目整体难度简单，部署简单，界面友好，代码结构清晰，相比上一个项目，虽然规模缩小了，但是很多地方有了改善。适合初学者学习和练习。
 
-对应的前端程序如下：https://github.com/huanfenz/BookManagerVue
+对应的前端程序如下：https://github.com/Herb95/BookManagerVue
 
 ## 环境介绍
 
@@ -36,13 +39,13 @@
 
 ## 项目截图
 
-![bk1](https://github.com/huanfenz/BookManager2/assets/49386166/98084dde-9715-4ff4-95d5-31490d395675)
+![bk1](https://github.com/Herb95/BookManager2/assets/49386166/98084dde-9715-4ff4-95d5-31490d395675)
 
 
-![bk2](https://github.com/huanfenz/BookManager2/assets/49386166/eb9e8f50-8a86-42c6-9e29-961193c32610)
+![bk2](https://github.com/Herb95/BookManager2/assets/49386166/eb9e8f50-8a86-42c6-9e29-961193c32610)
 
 
-![bk3](https://github.com/huanfenz/BookManager2/assets/49386166/f1c63765-0930-4eff-8e8a-129d9d51e888)
+![bk3](https://github.com/Herb95/BookManager2/assets/49386166/f1c63765-0930-4eff-8e8a-129d9d51e888)
 
 
 ## 演示地址
@@ -59,16 +62,16 @@
 
 ### 数据库结构
 
-![bk4](https://github.com/huanfenz/BookManager2/assets/49386166/1df726b7-97a0-4b8d-a59e-8373ec92f721)
+![bk4](https://github.com/Herb95/BookManager2/assets/49386166/1df726b7-97a0-4b8d-a59e-8373ec92f721)
 
 
 ## 联系方式
 
-我的博客地址：[个人博客](http://huanfenz.top)。欢迎大家来踩。
+我的博客地址：[个人博客](http://Herb95.top)。欢迎大家来踩。
 
 我的联系方式，欢迎联系我：
 
-*   邮箱：`huanfenz@qq.com`
+*   邮箱：`haibinzhang09@gmail.com`
 
 
 

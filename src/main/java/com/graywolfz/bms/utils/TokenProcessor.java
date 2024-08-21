@@ -1,6 +1,6 @@
 package com.graywolfz.bms.utils;
-/**
- * 生成Token的工具类：
+/*
+  生成Token的工具类：
  */
 
 import org.slf4j.Logger;
@@ -22,7 +22,6 @@ public class TokenProcessor {
     private TokenProcessor() {
     }
 
-    ;
     private static final TokenProcessor instance = new TokenProcessor();
 
     public static TokenProcessor getInstance() {
@@ -41,10 +40,10 @@ public class TokenProcessor {
             byte[] md5 = md.digest(token.getBytes());
             return Base64.getEncoder().encodeToString(md5);
         } catch (NoSuchAlgorithmException e) {
-            // TODO Auto-generated catch block  
+            // TODO Auto-generated catch block
 //            e.printStackTrace();
             log.error("生成Token异常 Error message: ", e);
         }
         return null;
     }
-}  
+}

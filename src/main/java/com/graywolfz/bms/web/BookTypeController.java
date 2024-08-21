@@ -2,7 +2,6 @@ package com.graywolfz.bms.web;
 
 import com.graywolfz.bms.model.BookType;
 import com.graywolfz.bms.service.BookTypeService;
-import com.graywolfz.bms.utils.JsonUtil;
 import com.graywolfz.bms.utils.MyResult;
 import com.graywolfz.bms.utils.MyUtils;
 import org.springframework.beans.factory.annotation.Autowired;

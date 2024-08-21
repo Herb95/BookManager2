@@ -2,33 +2,50 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <name>bookManagerApplication</name>
+    <description>library_manager_system</description>
+
     <!--父工程-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.6</version>
+        <version>3.3.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <!--GAV坐标-->
-    <groupId>com.wangpeng.bms</groupId>
+    <groupId>com.graywolfz.bms</groupId>
     <artifactId>BookManagerApi</artifactId>
     <version>1.0.5</version>
 
     <properties>
-        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>17.0</java.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
+            <version>6.3.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
+            <version>2.0.0-M2</version>
+        </dependency>
         <!--spring web起步依赖（包含了jackson）-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.1.6</version>
         </dependency>
         <!--SpringBoot整合MyBatis起步依赖-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.0.0</version>
+            <version>3.0.3</version>
         </dependency>
         <!--SpringBoot整合Redis起步依赖-->
         <dependency>
@@ -37,8 +54,10 @@
         </dependency>
         <!--MySQL的驱动依赖-->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.2.0</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
@@ -63,7 +82,7 @@
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.6</version>
+<!--                <version>1.4.2</version>-->
                 <configuration>
                     <!--配置文件的位置-->
                     <configurationFile>GeneratorMapper.xml</configurationFile>
@@ -75,6 +94,17 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <compilerArgs>
+                    </compilerArgs>
+                    <source>17</source>                    <!-- 或者你的运行时 JDK 版本 -->
+                    <target>17</target>                    <!-- 或者你的运行时 JDK 版本 -->
+                </configuration>
             </plugin>
         </plugins>
     </build>

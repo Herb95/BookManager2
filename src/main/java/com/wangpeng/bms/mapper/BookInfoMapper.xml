@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wangpeng.bms.mapper.BookInfoMapper">
-  <resultMap id="BaseResultMap" type="com.wangpeng.bms.model.BookInfo">
+<mapper namespace="com.graywolfz.bms.mapper.BookInfoMapper">
+  <resultMap id="BaseResultMap" type="com.graywolfz.bms.model.BookInfo">
     <id column="bookId" jdbcType="INTEGER" property="bookid" />
     <result column="bookName" jdbcType="VARCHAR" property="bookname" />
     <result column="bookAuthor" jdbcType="VARCHAR" property="bookauthor" />
@@ -16,7 +16,7 @@
     bookId, bookName, bookAuthor, bookPrice, bookTypeId, bookDesc, isBorrowed, bookImg
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from book_info
     where bookId = #{bookid,jdbcType=INTEGER}
@@ -25,15 +25,15 @@
     delete from book_info
     where bookId = #{bookid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.wangpeng.bms.model.BookInfo">
-    insert into book_info (bookId, bookName, bookAuthor, 
-      bookPrice, bookTypeId, bookDesc, 
+  <insert id="insert" parameterType="com.graywolfz.bms.model.BookInfo">
+    insert into book_info (bookId, bookName, bookAuthor,
+      bookPrice, bookTypeId, bookDesc,
       isBorrowed, bookImg)
-    values (#{bookid,jdbcType=INTEGER}, #{bookname,jdbcType=VARCHAR}, #{bookauthor,jdbcType=VARCHAR}, 
-      #{bookprice,jdbcType=DECIMAL}, #{booktypeid,jdbcType=INTEGER}, #{bookdesc,jdbcType=VARCHAR}, 
+    values (#{bookid,jdbcType=INTEGER}, #{bookname,jdbcType=VARCHAR}, #{bookauthor,jdbcType=VARCHAR},
+      #{bookprice,jdbcType=DECIMAL}, #{booktypeid,jdbcType=INTEGER}, #{bookdesc,jdbcType=VARCHAR},
       #{isborrowed,jdbcType=TINYINT}, #{bookimg,jdbcType=TINYINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.wangpeng.bms.model.BookInfo">
+  <insert id="insertSelective" parameterType="com.graywolfz.bms.model.BookInfo">
     insert into book_info
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="bookid != null">
@@ -88,7 +88,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.wangpeng.bms.model.BookInfo">
+  <update id="updateByPrimaryKeySelective" parameterType="com.graywolfz.bms.model.BookInfo">
     update book_info
     <set>
       <if test="bookname != null">
@@ -115,7 +115,7 @@
     </set>
     where bookId = #{bookid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.wangpeng.bms.model.BookInfo">
+  <update id="updateByPrimaryKey" parameterType="com.graywolfz.bms.model.BookInfo">
     update book_info
     set bookName = #{bookname,jdbcType=VARCHAR},
       bookAuthor = #{bookauthor,jdbcType=VARCHAR},

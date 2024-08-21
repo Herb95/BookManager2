@@ -1,12 +1,11 @@
-package com.wangpeng.bms.web;
+package com.graywolfz.bms.web;
 
-import com.wangpeng.bms.model.User;
-import com.wangpeng.bms.service.UserService;
-import com.wangpeng.bms.utils.*;
+import com.graywolfz.bms.model.User;
+import com.graywolfz.bms.service.UserService;
+import com.graywolfz.bms.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

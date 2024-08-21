@@ -1,15 +1,13 @@
-package com.wangpeng.bms.service.impl;
+package com.graywolfz.bms.service.impl;
 
-import com.mysql.cj.util.TimeUtil;
-import com.wangpeng.bms.mapper.UserMapper;
-import com.wangpeng.bms.model.User;
-import com.wangpeng.bms.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.graywolfz.bms.mapper.UserMapper;
+import com.graywolfz.bms.model.User;
+import com.graywolfz.bms.service.UserService;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;

@@ -1,6 +1,6 @@
-package com.wangpeng.bms.service;
+package com.graywolfz.bms.service;
 
-import com.wangpeng.bms.model.Borrow;
+import com.graywolfz.bms.model.Borrow;
 
 import java.util.List;
 import java.util.Map;

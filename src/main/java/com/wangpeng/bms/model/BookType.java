@@ -1,4 +1,4 @@
-package com.wangpeng.bms.model;
+package com.graywolfz.bms.model;
 
 public class BookType {
     private Integer booktypeid;

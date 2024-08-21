@@ -1,6 +1,6 @@
-package com.wangpeng.bms.mapper;
+package com.graywolfz.bms.mapper;
 
-import com.wangpeng.bms.model.User;
+import com.graywolfz.bms.model.User;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

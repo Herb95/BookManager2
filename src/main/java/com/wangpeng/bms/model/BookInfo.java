@@ -1,4 +1,4 @@
-package com.wangpeng.bms.model;
+package com.graywolfz.bms.model;
 
 import java.math.BigDecimal;
 

@@ -1,11 +1,11 @@
-package com.wangpeng.bms.service.impl;
+package com.graywolfz.bms.service.impl;
 
-import com.wangpeng.bms.mapper.BookTypeMapper;
-import com.wangpeng.bms.model.BookType;
-import com.wangpeng.bms.service.BookTypeService;
+import com.graywolfz.bms.mapper.BookTypeMapper;
+import com.graywolfz.bms.model.BookType;
+import com.graywolfz.bms.service.BookTypeService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 

@@ -1,13 +1,13 @@
-package com.wangpeng.bms.web;
+package com.graywolfz.bms.web;
 
-import com.wangpeng.bms.exception.NotEnoughException;
-import com.wangpeng.bms.exception.OperationFailureException;
-import com.wangpeng.bms.model.BookInfo;
-import com.wangpeng.bms.model.Borrow;
-import com.wangpeng.bms.service.BookInfoService;
-import com.wangpeng.bms.service.BorrowService;
-import com.wangpeng.bms.utils.MyResult;
-import com.wangpeng.bms.utils.MyUtils;
+import com.graywolfz.bms.exception.NotEnoughException;
+import com.graywolfz.bms.exception.OperationFailureException;
+import com.graywolfz.bms.model.BookInfo;
+import com.graywolfz.bms.model.Borrow;
+import com.graywolfz.bms.service.BookInfoService;
+import com.graywolfz.bms.service.BorrowService;
+import com.graywolfz.bms.utils.MyResult;
+import com.graywolfz.bms.utils.MyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;

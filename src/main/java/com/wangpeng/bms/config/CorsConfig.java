@@ -1,4 +1,4 @@
-package com.wangpeng.bms.config;
+package com.graywolfz.bms.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

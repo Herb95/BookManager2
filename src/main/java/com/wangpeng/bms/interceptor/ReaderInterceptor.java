@@ -1,10 +1,10 @@
-package com.wangpeng.bms.interceptor;
+package com.graywolfz.bms.interceptor;
 
-import com.wangpeng.bms.model.User;
+import com.graywolfz.bms.model.User;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 // 读者拦截器：拦截读者不能访问的请求
 public class ReaderInterceptor implements HandlerInterceptor {

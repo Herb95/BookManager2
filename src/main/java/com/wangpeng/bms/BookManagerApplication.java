@@ -1,4 +1,4 @@
-package com.wangpeng.bms;
+package com.graywolfz.bms;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan(value = "com.wangpeng.bms.mapper")
+@MapperScan(value = "com.graywolfz.bms.mapper")
 public class BookManagerApplication {
 
     public static void main(String[] args) {

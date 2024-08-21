@@ -1,4 +1,4 @@
-package com.wangpeng.bms.exception;
+package com.graywolfz.bms.exception;
 
 /**
  * 库存不足异常

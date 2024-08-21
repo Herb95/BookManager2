@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wangpeng.bms.mapper.BookTypeMapper">
-  <resultMap id="BaseResultMap" type="com.wangpeng.bms.model.BookType">
+<mapper namespace="com.graywolfz.bms.mapper.BookTypeMapper">
+  <resultMap id="BaseResultMap" type="com.graywolfz.bms.model.BookType">
     <id column="bookTypeId" jdbcType="INTEGER" property="booktypeid" />
     <result column="bookTypeName" jdbcType="VARCHAR" property="booktypename" />
     <result column="bookTypeDesc" jdbcType="VARCHAR" property="booktypedesc" />
@@ -10,7 +10,7 @@
     bookTypeId, bookTypeName, bookTypeDesc
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from book_type
     where bookTypeId = #{booktypeid,jdbcType=INTEGER}
@@ -19,13 +19,13 @@
     delete from book_type
     where bookTypeId = #{booktypeid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.wangpeng.bms.model.BookType">
+  <insert id="insert" parameterType="com.graywolfz.bms.model.BookType">
     insert into book_type (bookTypeId, bookTypeName, bookTypeDesc
       )
     values (#{booktypeid,jdbcType=INTEGER}, #{booktypename,jdbcType=VARCHAR}, #{booktypedesc,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.wangpeng.bms.model.BookType">
+  <insert id="insertSelective" parameterType="com.graywolfz.bms.model.BookType">
     insert into book_type
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="booktypeid != null">
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.wangpeng.bms.model.BookType">
+  <update id="updateByPrimaryKeySelective" parameterType="com.graywolfz.bms.model.BookType">
     update book_type
     <set>
       <if test="booktypename != null">
@@ -62,7 +62,7 @@
     </set>
     where bookTypeId = #{booktypeid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.wangpeng.bms.model.BookType">
+  <update id="updateByPrimaryKey" parameterType="com.graywolfz.bms.model.BookType">
     update book_type
     set bookTypeName = #{booktypename,jdbcType=VARCHAR},
       bookTypeDesc = #{booktypedesc,jdbcType=VARCHAR}

@@ -1,11 +1,11 @@
-package com.wangpeng.bms.service.impl;
+package com.graywolfz.bms.service.impl;
 
-import com.wangpeng.bms.mapper.BorrowMapper;
-import com.wangpeng.bms.model.Borrow;
-import com.wangpeng.bms.service.BorrowService;
+import com.graywolfz.bms.mapper.BorrowMapper;
+import com.graywolfz.bms.model.Borrow;
+import com.graywolfz.bms.service.BorrowService;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
